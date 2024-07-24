@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Sample Instagram reel data (replace with your own reel data)
     const instagramReels = [
         { title: 'Reel 1', thumbnailUrl: 'reel-cover1.jpg', link: 'https://www.instagram.com/reel/C35eV4JLsAx/?igsh=anV3YTIxNDFtNHMx' },
-        { title: 'Reel 2', thumbnailUrl: 'reel-cover2.jpg', link: 'https://www.instagram.com/reel/C35eV4JLsAx/?igsh=anV3YTIxNDFtNHMx' },
-        { title: 'Reel 3', thumbnailUrl: 'reel-cover3.jpg', link: 'https://www.instagram.com/reel/C35eV4JLsAx/?igsh=anV3YTIxNDFtNHMx' },
+        { title: 'Reel 2', thumbnailUrl: 'reel-cover2.jpg', link: 'https://www.instagram.com/reel/C9PZ9_pRwou/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
+        { title: 'Reel 3', thumbnailUrl: 'reel-cover3.jpg', link: 'https://www.instagram.com/reel/C1mhmTGrB8r/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' },
     ];
 
     // Sample YouTube video data (replace with your own video IDs)
