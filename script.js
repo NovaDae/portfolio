@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const mainNav = document.querySelector('.main-nav');
 
@@ -16,6 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
             mainNav.classList.remove('active');
         });
     });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+        const isClickInsideNav = mainNav.contains(event.target);
+        const isClickOnToggle = menuToggle.contains(event.target);
+        
+        if (!isClickInsideNav && !isClickOnToggle && mainNav.classList.contains('active')) {
+            menuToggle.classList.remove('active');
+            mainNav.classList.remove('active');
+        }
+    });
+
 
     // Sample Instagram reel data (replace with your own reel data)
     const instagramReels = [
@@ -97,5 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             alert('Error sending message. Please try again.');
         }
+    });    
     });
-});
+
