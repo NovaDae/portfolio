@@ -11,10 +11,16 @@ body {
     color: #333;
 }
 
+/* Existing styles... */
+
 header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
+    position: relative;
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,6 +61,53 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        display: none;
+        z-index: 1000;
+    }
+
+    .main-nav.active {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .main-nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .about-content{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 
 main {
     padding: 2rem;
@@ -253,47 +306,3 @@ footer {
     padding: 1rem;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .main-nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #333;
-        display: none;
-    }
-
-    .main-nav.active {
-        display: block;
-    }
-
-    .main-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-nav ul li {
-        margin: 1rem 0;
-    }
-
-    .menu-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .menu-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
-    }
-
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-}
