@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             body: JSON.stringify(Object.fromEntries(formData)),
         });
         if (response.ok) {
-            alert('Message sent successfully!');
+            alert('Message sent successfully! I will get back to you soon...');
             contactForm.reset();
         } else {
             alert('Error sending message. Please try again.');
