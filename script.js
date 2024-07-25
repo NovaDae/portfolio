@@ -22,12 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: 'Reel 1', thumbnailUrl: 'reel-cover1.jpg', link: 'https://www.instagram.com/reel/C35eV4JLsAx/?igsh=anV3YTIxNDFtNHMx' },
         { title: 'Reel 2', thumbnailUrl: 'reel-cover2.jpg', link: 'https://www.instagram.com/reel/C4_LjGOxjGy/?igsh=NW9handiMTFrZTN5' },
         { title: 'Reel 3', thumbnailUrl: 'reel-cover3.jpg', link: 'https://www.instagram.com/reel/C4_LjGOxjGy/?igsh=NW9handiMTFrZTN5' },
+        { title: 'Reel 1', thumbnailUrl: 'reel-cover1.jpg', link: 'https://www.instagram.com/reel/C8FXAi5xug-/?igsh=MW05ZXZtb2s5dDdjNw==' },
+        { title: 'Reel 2', thumbnailUrl: 'reel-cover2.jpg', link: 'https://www.instagram.com/tv/CD5fsxNB2EJ/?igsh=aTJuZ3Z4M3YyNjJ4' },
     ];
 
     // Sample YouTube video data (replace with your own video IDs)
     const youtubeVideos = [
         { title: 'Video 1', videoId: '9399lg0xmH4' },
         { title: 'Video 2', videoId: '6PYBCbTj-zs' },
+        { title: 'Video 1', videoId: '21Cvuo1MWNA?si=B-LjBjtobhL4IrV1' },
+        { title: 'Video 2', videoId: '2tbkE-9QNwM?si=MV75_NGlJkFwSK5S'}, 
     ];
 
     const reelContainer = document.querySelector('.reel-container');
