@@ -286,6 +286,11 @@ h3{
     display: none;
 }
 
+.contact-scanner{
+    text-align: center;
+    width: 4.5rem;
+    height: 4.5rem;
+}
 
 footer {
     background-color: #333;
